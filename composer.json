@@ -1,0 +1,13 @@
+{
+  "name": "platron/applepay-example",
+  "type": "project",
+  "require": {
+    "platron/signature": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Platron/signature.git"
+    }
+  ]
+}
