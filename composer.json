@@ -9,5 +9,8 @@
       "type": "vcs",
       "url": "https://github.com/Platron/signature.git"
     }
-  ]
+  ],
+  "autoload": {
+    "classmap": ["classes/"]
+  }
 }
