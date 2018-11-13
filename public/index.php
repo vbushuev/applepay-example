@@ -2,7 +2,22 @@
 require_once '../vendor/autoload.php';
 
 $paymentAmount = '1.50';
-$customer = 'customer_string';
+
+$client = new Client();
+$parameters = [
+    'pg_amount' => $paymentAmount,
+    'pg_description' => 'Test Apple Pay payment',
+    'pg_merchant_id' => Settings::MERCHANT_ID,
+    'pg_secret_key' => Settings::MERCHANT_SECRET_KEY,
+    'pg_salt' => 'random_salt',
+];
+$parameters['pg_sig'] = \platron\Signature::make('init_payment.php', $parameters, Settings::MERCHANT_SECRET_KEY);
+$response = new SimpleXMLElement($client->get('init_payment.php', $parameters));
+
+$redirectUrl = (string) $response->pg_redirect_url;
+$matches = [];
+preg_match('/customer=([^&]+)/', $redirectUrl, $matches);
+$customer = $matches[1];
 
 ?>
 <!DOCTYPE html>

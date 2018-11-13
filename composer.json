@@ -2,6 +2,8 @@
   "name": "platron/applepay-example",
   "type": "project",
   "require": {
+    "ext-curl": "*",
+    "ext-simplexml": "*",
     "platron/signature": "*"
   },
   "repositories": [
