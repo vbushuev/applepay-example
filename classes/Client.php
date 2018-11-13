@@ -22,6 +22,16 @@ class Client
         return curl_exec($this->curl);
     }
 
+    public function post($endpoint, $parameters)
+    {
+        $url = self::BASE_URL . '/' . $endpoint;
+        curl_setopt($this->curl, CURLOPT_URL, $url);
+        curl_setopt($this->curl, CURLOPT_POST, 1);
+        curl_setopt($this->curl, CURLOPT_POSTFIELDS, http_build_query($parameters));
+
+        return curl_exec($this->curl);
+    }
+
     public function __destruct()
     {
         curl_close($this->curl);
