@@ -25,14 +25,13 @@ function showApplePayButton() {
     }
 }
 
-
 /**
  * Обработчик нажатия кнопки оплаты.
  */
 function applePayButtonClicked(customer, paymentSystemName, paymentRequest) {
     const session = new ApplePaySession(1, paymentRequest);
-    const getSessionUrl = platronBaseUrl + '/get-apple-pay-session?customer=' + customer + '&psName=' + paymentSystemName;
-    const processPaymentUrl = platronBaseUrl + '/process-payment?customer=' + customer + '&psName=' + paymentSystemName;
+    const getSessionUrl = '/ajax/get_session.php?customer=' + customer + '&psName=' + paymentSystemName;
+    const processPaymentUrl = '/process_payment.php?customer=' + customer + '&psName=' + paymentSystemName;
     const resultUrl = platronBaseUrl + '/result?customer=' + customer;
 
     /**
