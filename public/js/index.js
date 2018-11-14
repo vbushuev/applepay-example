@@ -2,8 +2,6 @@
 Основной client-side JS. Обрабатывает нажатие на кнопку Apple Pay и совершает запрос платежа.
 */
 
-const platronBaseUrl = 'https://platron.ru/index.php/web/apple-pay';
-
 /**
  * Метод вызывается после загрузки страницы.
  * Используется для отображения кнопки, если Apple Pay поддерживается браузером.
@@ -31,7 +29,7 @@ function showApplePayButton() {
 function applePayButtonClicked(customer, paymentSystemName, paymentRequest) {
     const session = new ApplePaySession(1, paymentRequest);
     const getSessionUrl = '/ajax/get_session.php?customer=' + customer + '&psName=' + paymentSystemName;
-    const processPaymentUrl = '/process_payment.php?customer=' + customer + '&psName=' + paymentSystemName;
+    const processPaymentUrl = '/ajax/process_payment.php?customer=' + customer + '&psName=' + paymentSystemName;
     const resultUrl = platronBaseUrl + '/result?customer=' + customer;
 
     /**

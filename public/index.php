@@ -1,6 +1,8 @@
 <?php
 require_once '../vendor/autoload.php';
 
+error_reporting(E_ALL);
+
 $paymentAmount = '1.50';
 
 $client = new Client();
@@ -12,7 +14,7 @@ $parameters = [
     'pg_salt' => 'random_salt',
 ];
 $parameters['pg_sig'] = \platron\Signature::make('init_payment.php', $parameters, Settings::MERCHANT_SECRET_KEY);
-$response = new SimpleXMLElement($client->get('init_payment.php', $parameters));
+$response = new SimpleXMLElement($client->get(Settings::PLATRON_BASE_URL . '/init_payment.php', $parameters));
 
 $redirectUrl = (string) $response->pg_redirect_url;
 $matches = [];
@@ -31,6 +33,7 @@ $customer = $matches[1];
     <script src="js/index.js"></script>
     <script src="js/support.js"></script>
     <script>
+        const platronBaseUrl = '<?= Settings::PLATRON_APPLE_URL ?>';
         const customer = '<?= $customer ?>';
         const paymentSystemName = '<?= Settings::PAYMENT_SYSTEM_NAME ?>';
         const paymentRequest = {

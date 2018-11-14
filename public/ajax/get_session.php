@@ -1,7 +1,7 @@
 <?php
 require_once '../../vendor/autoload.php';
 
-$getSessionPath = Settings::PLATRON_APPLE_PATH . '/get-apple-pay-session';
+$getSessionPath = Settings::PLATRON_APPLE_URL . '/get-apple-pay-session';
 
 $client = new Client();
 
