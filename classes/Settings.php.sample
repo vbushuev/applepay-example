@@ -5,4 +5,8 @@ class Settings
     const MERCHANT_ID = 'your_merchant_id';
     const MERCHANT_SECRET_KEY = 'your_secret_key';
     const PAYMENT_SYSTEM_NAME = 'APPLEPAYPAYMENTSYSTEM';
+
+    const PLATRON_BASE_URL = 'https://platron.ru';
+    const PLATRON_APPLE_PATH = '/index.php/web/apple-pay';
+    const PLATRON_APPLE_URL = self::PLATRON_BASE_URL . self::PLATRON_APPLE_PATH;
 }
