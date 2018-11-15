@@ -9,6 +9,9 @@ $client = new Client();
 $parameters = [
     'pg_amount' => $paymentAmount,
     'pg_description' => 'Test Apple Pay payment',
+    'pg_user_phone' => '79999999999', // Номер телефона необходимо указывать при создании транзакции или запрашивать из Apple Wallet
+    'pg_user_contact_email' => 'qwe@qwe.com',
+    'pg_user_ip' => '5.255.255.80', // IP необходим для прохождения фрод фильтров
     'pg_merchant_id' => Settings::MERCHANT_ID,
     'pg_secret_key' => Settings::MERCHANT_SECRET_KEY,
     'pg_salt' => 'random_salt',
@@ -45,7 +48,7 @@ $customer = $matches[1];
             },
             supportedNetworks: ['masterCard', 'visa'],
             merchantCapabilities: ['supports3DS'],
-            //requiredShippingContactFields: ['phone', 'email'],
+            //requiredShippingContactFields: ['phone', 'email'] // Номер телефона необходимо указывать при создании транзакции или запрашивать из Apple Wallet
         };
     </script>
 </head>
