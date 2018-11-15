@@ -56,8 +56,13 @@ function applePayButtonClicked(customer, paymentSystemName, paymentRequest) {
         const payment = event.payment;
 
         processPayment(payment, processPaymentUrl).then(function (response) {
-            console.log('completePayment: SUCCESS');
-            session.completePayment(ApplePaySession.STATUS_SUCCESS);
+            if (response['status'] === 'ok') {
+                console.log('completePayment: SUCCESS');
+                session.completePayment(ApplePaySession.STATUS_SUCCESS);
+            } else {
+                console.log('completePayment: FAILURE');
+                session.completePayment(ApplePaySession.STATUS_FAILURE);
+            }
             window.location.href = resultUrl;
         }, function (response) {
             console.log('completePayment: FAILURE');
