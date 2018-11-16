@@ -40,7 +40,6 @@ function applePayButtonClicked(customer, paymentSystemName, paymentRequest) {
         console.log("Validate merchant");
         const validationURL = event.validationURL;
         getApplePaySession(event.validationURL, getSessionUrl).then(function (response) {
-            console.log(response);
             session.completeMerchantValidation(response);
         });
     };

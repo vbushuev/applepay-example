@@ -22,10 +22,8 @@ function getApplePaySession(url, sessionUrl) {
                 statusText: xhr.statusText
             });
         };
-        //xhr.setRequestHeader("Content-Type", "application/json");
         xhr.open('POST', sessionUrl);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        //console.log(JSON.stringify({url: url}));
         xhr.send('url=' + encodeURIComponent(url));
     });
 }
@@ -54,10 +52,8 @@ function processPayment(payment, processPaymentUrl) {
                 statusText: xhr.statusText
             });
         };
-        //xhr.setRequestHeader("Content-Type", "application/json");
         xhr.open('POST', processPaymentUrl);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        //console.log(JSON.stringify({url: url}));
         xhr.send('paymentDataJson=' + encodeURIComponent(JSON.stringify(payment)));
     });
 }
