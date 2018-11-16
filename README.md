@@ -68,7 +68,10 @@ paymentDataJson=<payment_as_json>
 ## Инструкция по запуску
 *Для запуска примера необходим сервер с PHP*
 1. Разместить код примера на сервере так, чтобы `DOCUMENT_ROOT` указывал на папку `public`
+1. Переименовать файл `classes/Settings.php.sample` в `classes/Settings.php`
+1. Указать в файле `classes/Settings.php` данные магазина и используемую платежную систему
 1. Выполнить команду `composer install` в папке с примером
+
 
 ## Ссылки
 * Apple Pay JS API - https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api
