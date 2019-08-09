@@ -76,4 +76,4 @@ paymentDataJson=<payment_as_json>
 ## Ссылки
 * Apple Pay JS API - https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api
 * Требования к оформлению - https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/introduction/
-* Пример реализации - https://developer.apple.com/library/archive/samplecode/EmporiumWeb/Introduction/Intro.html
+* Apple Pay on the Web Demo - https://applepaydemo.apple.com/
