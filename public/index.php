@@ -1,11 +1,13 @@
 <?php
 require_once '../vendor/autoload.php';
 
+
 error_reporting(E_ALL);
 
 $paymentAmount = '1.50';
 
 $client = new Client();
+
 $parameters = [
     'pg_amount' => $paymentAmount,
     'pg_description' => 'Test Apple Pay payment',
@@ -16,6 +18,8 @@ $parameters = [
     'pg_secret_key' => Settings::MERCHANT_SECRET_KEY,
     'pg_salt' => 'random_salt',
 ];
+
+
 $parameters['pg_sig'] = \platron\Signature::make('init_payment.php', $parameters, Settings::MERCHANT_SECRET_KEY);
 $response = new SimpleXMLElement($client->get(Settings::PLATRON_BASE_URL . '/init_payment.php', $parameters));
 

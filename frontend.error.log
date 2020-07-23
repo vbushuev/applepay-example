@@ -1,0 +1,52 @@
+2020/07/23 16:31:38 [crit] 87306#0: *1 connect() to unix:/usr/local/var/run/platron.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:31:39 [crit] 87306#0: *1 connect() to unix:/usr/local/var/run/platron.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test", referrer: "http://applepay.platron.test/"
+2020/07/23 16:34:15 [crit] 87306#0: *5 connect() to unix:/usr/local/var/run/platron.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:34:15 [crit] 87306#0: *5 connect() to unix:/usr/local/var/run/platron.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test", referrer: "http://applepay.platron.test/"
+2020/07/23 16:34:19 [crit] 87306#0: *5 connect() to unix:/usr/local/var/run/platron.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:34:19 [crit] 87306#0: *5 connect() to unix:/usr/local/var/run/platron.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test", referrer: "http://applepay.platron.test/"
+2020/07/23 16:35:42 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:35:43 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:35:44 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:35:44 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:35:44 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:35:44 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:36:36 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:36:41 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:37:11 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:37:11 [error] 87814#0: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test", referrer: "http://applepay.platron.test/index.php"
+2020/07/23 16:37:20 [error] 87814#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:38:37 [error] 87814#0: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Settings' not found in /Users/pittsb/Projects/platron/applepay-example/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /Users/pittsb/Projects/platron/applepay-example/public/index.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
+2020/07/23 16:39:09 [error] 87814#0: *15 FastCGI sent in stderr: "PHP message: PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /Users/pittsb/Projects/platron/applepay-example/vendor/platron/signature/Signature.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: applepay.platron.test, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/usr/local/var/run/platron.sock:", host: "applepay.platron.test"
